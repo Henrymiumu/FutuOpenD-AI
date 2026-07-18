@@ -1,6 +1,6 @@
 # FutuOpenD_AI
 
-> **Practice project only.** For learning and personal practice — not a production product. Analysis is for reference only and **does not constitute investment advice**.
+> **Practice project only.** For learning and personal practice.
 
 Fetch stock quotes and K-line data via local **Futu OpenD**, then send them to an **AI** (Ollama / OpenAI / Gemini, etc.) for a simple market summary. Frontend: Vue 3. Backend: FastAPI.
 
@@ -40,7 +40,7 @@ npm install
 npm run dev
 ```
 
-Open: http://127.0.0.1:5173
+Open: http://localhost:5173/
 
 ### Before using
 
