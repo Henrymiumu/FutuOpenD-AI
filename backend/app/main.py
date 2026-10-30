@@ -31,8 +31,9 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
+    # GitHub Pages is HTTPS; the UI calls this API on localhost. No cookies are used.
     allow_origins=settings.cors_origins + ["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -1,4 +1,6 @@
-const BASE = import.meta.env.VITE_API_BASE || ''
+// Local `npm run dev` uses Vite proxy (empty base). GitHub Pages has no proxy,
+// so the hosted UI talks to FastAPI on the visitor's own machine.
+const BASE = import.meta.env.VITE_API_BASE || (import.meta.env.PROD ? 'http://127.0.0.1:8000' : '')
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
