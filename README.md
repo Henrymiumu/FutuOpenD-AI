@@ -32,21 +32,20 @@ python run.py
 
 API docs: http://127.0.0.1:8000/docs
 
-### 2. Frontend (new terminal)
+### 2. GitHub Pages (frontend only)
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+How it works:
 
-Open: http://localhost:5173/
+1. The UI is at `https://henrymiumu.github.io/FutuOpenD-AI/`
+2. Each visitor still runs **OpenD + backend locally** (`python run.py`)
+3. The hosted page calls `http://127.0.0.1:8000`
 
 ### Before using
 
 1. Make sure OpenD is running (default `127.0.0.1:11111`)
 2. Pick an AI provider in the UI and enter an API key (Ollama usually needs none)
 3. Enter codes, e.g. `HK.00700, US.AAPL`
+
 
 ## Layout
 
